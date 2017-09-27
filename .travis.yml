@@ -8,15 +8,15 @@ matrix:
     - os: linux
       sudo: required
       python: 2.7
-      before_install:
-        - sudo apt-get install openjdk-8-jdk
-        - sudo apt-get install maven
+      before_script:
+        - cd travis
+      script:
+        - ./boost_bootstrap.sh
+
     #- os: osx
     #  python: 2.7
     #  before_install:
     #    - brew install maven
-
-before_install:
   #- sudo pip install cpp-coveralls wheel
   # use miniconda for python package testing
   #- wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
