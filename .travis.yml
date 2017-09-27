@@ -1,8 +1,8 @@
-language: cpp
+#language: cpp
 
-compiler:
-  - gcc
-  - clang
+#compiler:
+#  - gcc
+#  - clang
 matrix:
   include:
     - os: linux
@@ -26,9 +26,9 @@ matrix:
   #- conda config --set always_yes yes --set changeps1 no
   #- conda update -q conda
   #- conda create -q -n test-python27 python=2.7 nomkl numpy scipy scikit-learn
-script:
+#script:
   #- make all
-  - make java
+#  - make java
   #- make python
   #- mvn clean test -f java/pom.xml
   #- make test
@@ -41,5 +41,5 @@ script:
   #- py.test tests
   #- source deactivate
   #- cd ..
-after_success:
-  - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
+#after_success:
+#  - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
