@@ -11,7 +11,7 @@ matrix:
 
 
 install:
-  - ./travis/boost_bootstrap.sh
+  - ./.travis/boost_bootstrap.sh
     #- os: osx
     #  python: 2.7
     #  before_install:
