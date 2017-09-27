@@ -8,11 +8,10 @@ matrix:
     - os: linux
       sudo: required
       python: 2.7
-      before_script:
-        - cd travis
-      script:
-        - ./boost_bootstrap.sh
 
+
+install:
+  - ./travis/boost_bootstrap.sh
     #- os: osx
     #  python: 2.7
     #  before_install:
